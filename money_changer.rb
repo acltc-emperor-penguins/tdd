@@ -15,6 +15,7 @@ class ChangeMachine
       cents -= next_coin_to_be_dispensed
       coins << next_coin_to_be_dispensed
     end
+
     coins
   end
 end
@@ -45,6 +46,11 @@ RSpec.describe ChangeMachine do
     it 'should return [10] when given 10' do
       machine = ChangeMachine.new
       expect(machine.change(10)).to eq([10])
+    end
+
+    it 'should return [25] when given 25' do
+      machine = ChangeMachine.new
+      expect(machine.change(25)).to eq([25])
     end
   end
 end
