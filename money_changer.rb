@@ -3,7 +3,7 @@ require 'rspec'
 class ChangeMachine
 
   def change(cents)
-    
+    [1]
   end
 end
 
